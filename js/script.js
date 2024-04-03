@@ -15,7 +15,7 @@ function calculateAreaOfTriangle () {
   const paymentPERHour = parseInt(document.getElementById('Payment-per-hour').value)
 
   // process
-  const areaOfTriangle = baseOfTriangle * heightOfTriangle
+  const areaOfTriangle = baseOfTriangle * heightOfTriangle / 2
 
   // output
   document.getElementById('area').innerHTML = 'Area is: ' + areaOfTriangle + ' cm²'
