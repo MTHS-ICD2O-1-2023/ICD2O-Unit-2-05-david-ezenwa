@@ -13,10 +13,11 @@ function calculateAreaOfTriangle () {
   // input
   const hoursPERWeek = parseInt(document.getElementById('Hours-per-week').value)
   const paymentPERHour = parseInt(document.getElementById('Payment-per-hour').value)
+  const TAX_RATE = 0.18
 
   // process
-  const areaOfTriangle = baseOfTriangle * heightOfTriangle / 2
+  const areaOfTriangle = (hoursPERWeek * paymentPERHour) / TAX_RATE
 
   // output
-  document.getElementById('area').innerHTML = 'Area is: ' + areaOfTriangle + ' cm²'
+document.getElementById('pay').innerHTML = 'Your pay will be: $' + areaOfTriangle  
 }
