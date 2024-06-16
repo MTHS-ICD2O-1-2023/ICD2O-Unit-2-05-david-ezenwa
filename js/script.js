@@ -11,8 +11,8 @@
  */
 function calculateAreaOfTriangle () {
   // input
-  const hoursPERWeek = parseInt(document.getElementById('Hours-per-week').value)
-  const paymentPERHour = parseInt(document.getElementById('Payment-per-hour').value)
+  const hoursPERWeek = parseFloat(document.getElementById('Hours-per-week').value)
+  const paymentPERHour = parseFloat(document.getElementById('Payment-per-hour').value)
   const TAX_RATE = 0.18
 
   // process
